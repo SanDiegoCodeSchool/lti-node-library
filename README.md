@@ -22,10 +22,10 @@ Follow these steps to implement this Library:
 
 Optionally, you can:
 
-A. Use Example Tool (https://github.com/SanDiegoCodeSchool/lti-node-example)
-B. View the OIDC Tool Launch Flow (see the related 'lti-node-example' repo for this)
-C. Use the Test Suite
-D. View the Glossary
+1. Use Example Tool (https://github.com/SanDiegoCodeSchool/lti-node-example)
+2. View the OIDC Tool Launch Flow (see the related 'lti-node-example' repo for this)
+3. Use the Test Suite
+4. View the Glossary
 
 ### 0. Develop a Tool
 

@@ -28,11 +28,11 @@ Optionally, you can:
 3. Use the Test Suite
 4. View the Glossary
 
-### 0. Develop a Tool
+### Develop a Tool
 
 It is assumed if you are interested in integrating a Tool into a Platform, that you have already developed a working Tool.  If not, Step 0 is to develop your Tool that will be dropped into a learning Platform.  If you are not at that point yet, you can use the Example Tool related to this Library.
 
-### 1. Install Library
+### Install Library
 
 To install this Library, use the Node Package Manager (NPM) and run in your terminal:
 
@@ -40,7 +40,7 @@ To install this Library, use the Node Package Manager (NPM) and run in your term
 npm install node-lti-v1p3
 ```
 
-### 2. Setup Server and Routes
+### Setup Server and Routes
 
 This library requires the use of an Express server.  Setup a basic Express server add middleware, and routes within your server.js file to launch your Tool.  You can refer to the server.js example file in our Example Tool.
 
@@ -100,7 +100,7 @@ app.post('/project/return', (req, res) => {
 });
 ```
 
-### 3. Setup MongoDB
+### Setup MongoDB
 
 This library requires MongoDB.  If you do not currently have MongoDB setup, follow these instructions.
 
@@ -121,7 +121,7 @@ mongoose.connect('mongodb://localhost:27017/TESTLTI', {
 mongoose.Promise = Promise;
 ```
 
-### 4. Add Tool to Platform
+### Add Tool to Platform
 
 Within the Platform, the Site Administrator needs to setup the External Tool.  For example, in Moodle s/he goes to Site Administration->Plugins->External Tool->Manage Tools.  At a minimum, the following fields should be setup:
 
@@ -140,7 +140,7 @@ After saving the External Tool, the Platform will assign a Client ID to the Tool
 
 The next step will be to add the Tool to course(s).  This can be done by an Administrator or a Teacher.  In Moodle, the steps are to navigate the appropriate course and use the Gear icon to `Turn editing on`.  You will then be able to `Add an Activty or Resource` for an `External Tool`.  Simply give it a name and select the Tool you added above from the drop down box for `Preconfigured tool`.  Click `Save and return to course`.
 
-### 5. Register Platform with Tool
+### Register Platform with Tool
 
 In order register a Platform with the Tool, add a call to `registerPlatform` in your server file, with the values you received from Step 4.  For reference, here is a screenshot from the Moodle sandbox showing these values:
 
@@ -169,7 +169,7 @@ registerPlatform(
 );
 ```
 
-### 6. Run your Server
+### Run your Server
 
 Once the Tool is integrated with the Platform, your server must be up and running so that the Tool can be accessed. In a development environment, start your MongoDB and your server in separate terminals:
 
@@ -182,7 +182,7 @@ Now that your server is running, you are able to access the Tool's generated Cli
 
 ---
 
-### 7. Optional Activities
+### Optional Activities
 
 #### Test Suite
 

@@ -37,7 +37,7 @@ It is assumed if you are interested in integrating a Tool into a Platform, that 
 To install this Library, use the Node Package Manager (NPM) and run in your terminal:
 
 ```
-npm install node-lti-library
+npm install lti-node-library
 ```
 
 ### Setup Server and Routes

@@ -15,7 +15,7 @@
     "url": "git+https://github.com/SanDiegoCodeSchool/lti-node-library.git"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "base64url": "^3.0.1",
     "connect-mongo": "^3.0.0",
     "dotenv": "^8.0.0",
